@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Inventory</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>60AMW Inventory</title>
+
+    <button class="button" style="vertical-align:middle"><span>Home</span></button>
+    <button class="button" style="vertical-align:middle"><span>Contact</span></button>
+    
 
 </head>
 <body>
     
-    <h1>Software Inventory</h1>
+    <h1 class="black"><strong>60AMW Software Inventory</strong></h1>
 
     <div class="square1">
     
-        <h1>Contact Information</h1>
+        <h2>Contact Information</h2>
 
         <p>
             Name
@@ -35,10 +39,24 @@
 
 
 
-    <div class="square2">
+    <div class="square1">
 
         <h1>Software Information</h1>
 
+        <p class="white2">
+            Software Title
+            <input type="text" name="software-box" id="software_name-input"/>
+        </p>
+
+        <p class="white2">
+            License Number
+            <input type="text" name="license#-box" id="license#-input"/>
+        </p>
+
+        <p class="white2">
+            License Expiration Date
+            <input type="text" name="license_expiration-box" id="license_expiration-input"/>
+        </p>
 
 
 
@@ -49,7 +67,7 @@
 
 
     
-    
+    <button class="button" style="vertical-align:middle"><span>Submit</span></button>   
     
 </body>
 </html>
