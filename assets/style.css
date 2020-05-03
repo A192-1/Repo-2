@@ -1,11 +1,13 @@
 body {
 
-    background-image: url('images/mountains.jpg');
+    background-image: url('images/airport.jpg');
     background-repeat: no-repeat;
-    background-size: 1920px 1080px;
+    width: 100%;
+    height: auto;
+    background-size: auto;
 
 }
-
+label
 .black{
 
     color: black;
@@ -41,6 +43,12 @@ body {
     margin: 5%;
     padding: 1em; 
 
+}
+
+.square3{
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
 }
 
 .button {
@@ -81,4 +89,30 @@ body {
   .button:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+  }
+
+  .box{
+    flex: initial;
+    padding: 10px;
+    text-align: center;
+    
+  }
+
+  .push-left{
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .container-body{
+    display: flexbox;
+    flex-direction:;
   }
