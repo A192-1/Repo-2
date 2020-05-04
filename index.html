@@ -8,10 +8,8 @@
 
 <!--Page Navbar-->
     <div class="flex-container">
-        <div class="push-left">Home</div>
+        <div class="box">Home</div>
         <div class="box">Contact</div>
-        <div class="box">Pic</div>
-        <div class="box">Login</div>
     </div>
 
     <title>60AMW Inventory</title>
@@ -19,19 +17,69 @@
 </head>
 <body>
 <!--Header-->
-    <h1 class="black"><strong>Software Inventory</strong></h1>
+<h1><strong>Software Registration</strong></h1>
 
-<!--Contact-->
-    <div>
-        <div></div>
+<form action="/my-handling-form-page" method="post">
+    <ul>
+    <p><u>System Info</u></p>
+     <li>
+       <label for="SQ">Squadron:</label>
+       <input type="text" id="SQ" name="SQ">
+     </li>
+     <li>
+       <label for="CSL_ID">CSL:</label>
+       <input type="text" id="CSL_ID" name="CSL_ID">
+     </li>
+     <li>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+     </li>
+     <li>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+     </li>
+     <br>
+     <p><u>Software Info</u></p>
+     <li>
+         <label for="GPC_POC">GPC POC</label>
+         <input type="text" id="GPC_POC" name="GPC_POC">
+     </li>
+     <li>
+         <label for="Product">Product Name</label>
+         <input type="text" id="Product" name="Product">
+     </li>
+     <li>
+         <label for="Publisher">Software Publisher</label>
+         <input type="text" name="Publisher" id="Publisher">
+     </li>
+     <li>
+         <label for="cost">Cost</label>
+         <input type="number" name="cost" id="cost">
+     </li>
+     <li>
+         <label for="qty">Quantity</label>
+         <input type="number" name="qty" id="qty">
+     </li>
+     <li>
+        <label for="l_type">License Type</label>
+        <input type="text" name="l_type" id="l_type">
+     </li>
+     <li>
+        <label for="l_exp">License Expiration</label>
+        <input type="date" name="l_exp" id="l_exp">
+     </li>
+    </ul>
+   </form>
 
-    </div>
+
+
+
 
     
 
 
-    
-    <button class="button" style="vertical-align:middle"><span>Submit</span></button>   
-    
+
+
 </body>
+<footer><button class="button"><span>Submit</span></button></footer>
 </html>

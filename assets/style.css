@@ -1,55 +1,44 @@
 body {
-
-    background-image: url('images/airport.jpg');
+    
+  font-size: 18px;
+    background-image: url('images/af-plane.jpg');
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
-    background-size: auto;
-
+     
 }
-label
+
+h1{
+  font-size: 48px;
+}
+
+p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0em;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment (formats)*/
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
 .black{
 
     color: black;
     font-size: larger; 
 }
 
-.white2{
-    color: white;
-    font-size: medium; 
-}
-
-
-.square0{
-    border: 10px solid black;
-    height: 50px;
-    width: 50%;
-    margin: 5%;
-}
-
-.square1{
-    border: 2px solid black;
-    height: 250px ;
-    width: 50%;
-    margin: 5%;
-    padding: 1em; 
-
-}
-
-.square2{
-    border: 1px solid blue;
-    height: 250px ;
-    width: 50%;
-    margin: 5%;
-    padding: 1em; 
-
-}
-
-.square3{
-    border: 1px solid black;
-    height: 20px;
-    width: 20px;
-}
 
 .button {
     display: inline-block;
@@ -58,12 +47,13 @@ label
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
-    width: 80px;
+    width: 90px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    vertical-align: middle;
   }
   
   .button span {
@@ -95,9 +85,7 @@ label
   .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-
+    justify-content: left;
   }
 
   .box{
@@ -112,7 +100,9 @@ label
     text-align: center;
   }
 
-  .container-body{
-    display: flexbox;
-    flex-direction:;
+  .body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+    text-align: left;
   }
