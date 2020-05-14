@@ -100,9 +100,36 @@ label {
     text-align: center;
   }
 
-  .body-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: 
-    text-align: left;
+ 
+  
+  .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .modal-content{
+    background-color: seashell;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.2), 0 7px 20px rgba(0,0,0,0.2);
+  }
+
+  .close_logo{
+    color:#ccc;
+    float: right;
+    font-size: 30px;
+
+  }
+
+  .close_logo:hover,.close_btn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }

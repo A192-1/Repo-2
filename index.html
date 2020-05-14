@@ -5,26 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    
 
 <!--Page Navbar-->
     <div class="flex-container">
-        <div class="box">Home</div>
-        <div class="box">Contact</div>
+        <div class="box"><button id="modal_btn">Home</button></div>
+        <div class="box"><button onclick="contact_func()">Contact</button></div>
     </div>
 
     <title>60AMW Inventory</title>
 
 </head>
 <body>
-<!--Header-->
+
+<!--Header1-->
 <h1><strong>Software Registration</strong></h1>
+
+<!--Modal-->
+<div id="modal_div" class="modal">
+    <div class="modal-content">
+        <span id= "close_btn"class="close_logo">&times;</span>
+        <p>Redirecting</p>
+    </div>
+</div>
+
 
 <form action="/my-handling-form-page" method="post">
     <ul>
     <p><u>System Info</u></p>
      <li>
        <label for="SQ">Squadron:</label>
-       <input type="text" id="SQ" name="SQ">
+       <select id="SQ">
+           <option value="">---Please Select Squadron---</option>
+            <option value="" id="sq-1">21AS</option>
+            <option value="" id="sq-2">60CS</option>
+       </select>
      </li>
      <li>
        <label for="CSL_ID">CSL:</label>
@@ -39,6 +54,9 @@
         <input type="tel" id="phone" name="phone">
      </li>
      <br>
+
+     <button id="clearBtn">Clear Form</button>
+
      <p><u>Software Info</u></p>
      <li>
          <label for="GPC_POC">GPC POC</label>
@@ -72,14 +90,9 @@
    </form>
 
 
-
-
-
-    
-
-
-
-
+   <script src="assets/index.js"></script>
 </body>
-<footer><button class="button"><span>Submit</span></button></footer>
+
+<button class="button"><span>Submit</span></button>
+
 </html>
