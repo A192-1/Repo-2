@@ -66,7 +66,7 @@ sq1.addEventListener('click' , function(){
     ID_input.value = obj1[0].CSL;
     email_input.value = obj1[0].Email;
     phone_input.value = obj1[0].Phone;
-})
+});
 
 //data for office2
 let sql2 = document.querySelector("#sq-2")
@@ -74,7 +74,7 @@ sql2.addEventListener('click' , function (){
     ID_input.value = obj1[1].CSL;
     email_input.value = obj1[1].Email;
     phone_input.value = obj1[1].Phone;
-})
+});
 
 
 //clear CSL input box
@@ -86,12 +86,18 @@ let clear_email = document.querySelector('#email');
 //clear phone input box
 let clear_phone = document.querySelector('#phone');
 
+
+/*
 //clear button
-let clearBtn = document.querySelector("#clearBtn")
+let inputs = document.getElementsByTagName("input");
+console.log(inputs)
+let clearBtn = document.querySelector('#clearBtn');
 clearBtn.addEventListener('click' , function(){
-    ID_input.value = null;
-    email_input.value = null;
-    phone_input.value = null;
-})
+    inputs.forEach(input => input.value = '');
+    
+});
+*/
+
+//clear button2
 
 
