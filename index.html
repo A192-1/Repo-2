@@ -1,55 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Inventory</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
+
+<!--Page Navbar-->
+    <div class="flex-container">
+        <div class="box"><button id="modal_btn">Home</button></div>
+        <div class="box"><button onclick="contact_func()">Contact</button></div>
+    </div>
+
+    <title>60AMW Inventory</title>
 
 </head>
 <body>
-    
-    <h1>Software Inventory</h1>
 
-    <div class="square1">
-    
-        <h1>Contact Information</h1>
+<!--Header1-->
+<h1><strong>Software Registration</strong></h1>
 
-        <p>
-            Name
-            <input type="text" name="name-box" id="name-input"/>
-        </p>
-
-        <p>
-            Phone
-            <input type="text" name="phone-box" id="phone-input"/>
-        </p>
-
-        <p>
-            Email
-            <input type="text" name="name-box" id="email-input"/>
-        </p>
-
-
+<!--Modal-->
+<div id="modal_div" class="modal">
+    <div class="modal-content">
+        <span id= "close_btn"class="close_logo">&times;</span>
+        <p>Redirecting</p>
     </div>
+</div>
 
 
+<form action="/my-handling-form-page" method="post">
+    <ul>
+    <p><u>System Info</u></p>
+     <li>
+       <label for="SQ">Squadron:</label>
+       <select id="SQ">
+           <option value="">---Please Select Squadron---</option>
+            <option value="" id="sq-1">21AS</option>
+            <option value="" id="sq-2">60CS</option>
+       </select>
+     </li>
+     <li>
+       <label for="CSL_ID">CSL:</label>
+       <input type="text" id="CSL_ID" name="CSL_ID">
+     </li>
+     <li>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+     </li>
+     <li>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+     </li>
+     <br>
 
-    <div class="square2">
+<hr>
+     
+     <p><u>Software Info</u></p>
+     <li>
+         <label for="GPC_POC">GPC POC</label>
+         <input type="text" id="GPC_POC" name="GPC_POC">
+     </li>
+     <li>
+         <label for="Product">Product Name</label>
+         <input type="text" id="Product" name="Product">
+     </li>
+     <li>
+         <label for="Publisher">Software Publisher</label>
+         <input type="text" name="Publisher" id="Publisher">
+     </li>
+     <li>
+         <label for="cost">Cost</label>
+         <input type="number" name="cost" id="cost">
+     </li>
+     <li>
+         <label for="qty">Quantity</label>
+         <input type="number" name="qty" id="qty">
+     </li>
+     <li>
+        <label for="l_type">License Type</label>
+        <input type="text" name="l_type" id="l_type">
+     </li>
+     <li>
+        <label for="l_exp">License Expiration</label>
+        <input type="date" name="l_exp" id="l_exp">
+     </li>
+    </ul>
+   </form>
 
-        <h1>Software Information</h1>
 
+   <button class="button"><span>Submit</span></button><button id="clearBtn">Clear Form</button>
 
-
-
-
-
-
-    </div>
-
-
-    
-    
-    
+   <script src="assets/index.js"></script>
 </body>
+
+
+
 </html>
